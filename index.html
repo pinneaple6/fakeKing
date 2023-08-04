@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FakeKing</title>
+</head>
+<body>
+    <form action="#" id="preform">
+        <label for="street">Calle del restaurante:</label><input id="street" placeholder="C. Camilo José Cela, 2, 28230 Madrid" type="text" name="street">
+        <label for="num">Número de pedido:</label><input id="num" placeholder="111" type="number" min="0" max="1000" name="num">
+        <div><input id="takeAway" type="checkbox" name="takeAway"><label for="takeAway">Para llevar</label></div>
+        <button type="button" onClick="fill()">GENERAR RECIBO</button>
+        <button type="button" onClick="document.getElementById('preform').style.display = 'none'">VERSION IMPRIMIR</button>
+    </form>
+
+    <div id="receipt">
+        <h2>BURGER KING®</h2>
+        <br/>
+        <h2 id="bk-show"></h2>
+        <p id="street-show">C/ Camilo José Cela 2. Local 1 -1A. C.C Heron City - C.P. 28230 - Madrid</p>
+        <h4>Food Service Project S.A</h4>
+        <p>Camino de la Zarzuela 1 C.P.28023 Aravaca (Madrid)</p>
+        <p>CIF: <span id="cif-show"></span></p>
+        <p>Factura Simplificada: <span id="fs-show"></span></p>
+        
+        <div>
+            <p>Fecha/Hora</p>
+            <p id="date-show"></p>
+        </div>
+
+        <p>Número de pedido</p>
+        <h1 id="num-show"></h1>
+
+        <table id="menutable">
+        </table>
+        <p>TOTAL: <span id="total-show"></span></p>
+
+        <p><b>Número de Mesa Winrest: <span id="winrest-show"></span></b></p>
+        <p>Tillster Order ID: <span id="id-show"></span></p>
+        <p>Quiosco: <span id="kiosko-show"></span></p>
+        <p id="takeAway-show"></p>
+        <p>IVA Incluido</p>
+        *********************************
+        <p>
+            ¡Gracias por tu pedido! Puedes consultar
+            tus coronas en la App o en
+            https://burgerking.es </p>
+        <p>
+            ¿CÓMO FUE SU EXPERIENCIA?</p>
+        <p>
+            Diganoslo en:</p>
+            <a href="#">www.miexperienciabkespana.com</a>
+        <p>GRACIAS POR SU VISITA</p>
+        <p>
+            Si necesita una factura solicu00edtela en
+            nuestra Web: facturacion-ticket.zena.
+            comnPara cualquier incidencia diru00edjase
+            a facturacionzena
+        </p>
+
+        <img src="nfc.png">
+
+        <p>OP: VENTA</br>
+        Trj: *************<span id="card-show"></span></br>
+        Tit: <span id="title-show"></span></br>
+        AID: <span id="aid-show"></span></br>
+        LBL: DEBIT</br>
+        ARC: 00</br>
+        Cuenta: <span id="account-show"></span></br>
+        Total: <span id="total-card-show"></span></br>
+        Operacion contactless, Firma no necesaria</br>
+        Recibo para el cliente</p>
+    </div>
+</body>
+
+<script src="app.js"></script>
+</html>

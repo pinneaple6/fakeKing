@@ -1,0 +1,76 @@
+* {
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preform {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+button {
+    padding: 10px;
+}
+
+#receipt {
+    margin-top: 70px;
+    margin-bottom: 400px;
+    border: 1px solid lightgray;
+    width: 310px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: none;
+}
+
+#receipt>* {
+    margin: 5px;
+}
+
+#bk-show {
+    margin-top:-10px;
+}
+
+#receipt>div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#receipt table {
+    width: 90%;
+}
+
+#receipt p, table {
+    font-size: 0.8em;
+}
+
+#receipt>p {
+    text-align: center;
+    width: 80%;
+}
+
+#street-show {
+    width: 80%;
+}
+
+a {
+    color: blue;
+}
+
+img {
+    width: 80px;
+}
